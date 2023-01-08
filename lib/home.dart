@@ -8,8 +8,6 @@ void main() {
 
 class Home extends StatelessWidget {
   const Home({super.key});
-
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -36,7 +34,6 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        // Here we take the value from the MyHomePage object that was created by
         title: Text(widget.title),
       ),
       body: Center(
@@ -64,7 +61,7 @@ class _MyHomePageState extends State<MyHomePage> {
             )
           ],
         ),
-      ), // This trailing comma makes auto-formatting nicer for build methods.
+      ),
     );
   }
 }

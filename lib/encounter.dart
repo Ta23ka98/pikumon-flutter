@@ -33,10 +33,6 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(
         title: Text(widget.title),
       ),
-      // body: Column(children: []),
-      // body: Center(
-      //   child: Image.asset('images/image1.png'),
-      // ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -58,19 +54,6 @@ class _MyHomePageState extends State<MyHomePage> {
           ],
         ),
       ),
-
-      // body: Center(
-      //   child: Container(
-      //     alignment: Alignment.bottomCenter,
-      //     width: double.infinity,
-      //     height: double.infinity,
-      //     color: Colors.yellow,
-      //     child: ElevatedButton(
-      //       child: Text("攻撃する！"),
-      //       onPressed: () {},
-      //     ),
-      //   ),
-      // ),
     );
   }
 }
