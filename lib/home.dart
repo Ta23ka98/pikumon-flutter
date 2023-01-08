@@ -2,10 +2,6 @@ import 'package:flutter/material.dart';
 
 import 'encounter.dart';
 
-void main() {
-  runApp(const Home());
-}
-
 class Home extends StatelessWidget {
   const Home({super.key});
   @override
