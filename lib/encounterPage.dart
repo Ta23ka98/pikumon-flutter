@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 
-class Encounter extends StatefulWidget {
-  Encounter({Key? key, required this.title}) : super(key: key);
+class EncounterPage extends StatefulWidget {
+  EncounterPage({Key? key, required this.title}) : super(key: key);
 
   final String title;
 
   @override
-  _EncounterState createState() => _EncounterState();
+  _EncounterPageState createState() => _EncounterPageState();
 }
 
-class _EncounterState extends State<Encounter> {
+class _EncounterPageState extends State<EncounterPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

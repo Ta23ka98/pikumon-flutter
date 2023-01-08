@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'encounter.dart';
+import 'encounterPage.dart';
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key, required this.title});
@@ -35,7 +35,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 onPressed: () => {
                   Navigator.of(context)
                       .push(MaterialPageRoute(builder: (context) {
-                    return Encounter(title: "モンスターがあらわれた！");
+                    return EncounterPage(title: "モンスターがあらわれた！");
                   }))
                 },
                 child: const Text('エンカウント'),
