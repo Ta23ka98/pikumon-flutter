@@ -35,7 +35,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 onPressed: () => {
                   Navigator.of(context)
                       .push(MaterialPageRoute(builder: (context) {
-                    return Encounter();
+                    return Encounter(title: "モンスターがあらわれた！");
                   }))
                 },
                 child: const Text('エンカウント'),

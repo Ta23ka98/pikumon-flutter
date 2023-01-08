@@ -1,28 +1,15 @@
 import 'package:flutter/material.dart';
 
-class Encounter extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: MyHomePage(title: 'モンスターがあらわれた！'),
-    );
-  }
-}
-
-class MyHomePage extends StatefulWidget {
-  MyHomePage({Key? key, required this.title}) : super(key: key);
+class Encounter extends StatefulWidget {
+  Encounter({Key? key, required this.title}) : super(key: key);
 
   final String title;
 
   @override
-  _MyHomePageState createState() => _MyHomePageState();
+  _EncounterState createState() => _EncounterState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
+class _EncounterState extends State<Encounter> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
