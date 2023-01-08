@@ -1,26 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'encounter.dart';
-
-void main() {
-  runApp(const Home());
-}
-
-class Home extends StatelessWidget {
-  const Home({super.key});
-
-  // This widget is the root of your application.
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: const MyHomePage(title: 'エンカウント画面'),
-    );
-  }
-}
+import 'encounter_page.dart';
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key, required this.title});
@@ -36,7 +16,6 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        // Here we take the value from the MyHomePage object that was created by
         title: Text(widget.title),
       ),
       body: Center(
@@ -56,7 +35,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 onPressed: () => {
                   Navigator.of(context)
                       .push(MaterialPageRoute(builder: (context) {
-                    return Encounter();
+                    return EncounterPage(title: "モンスターがあらわれた！");
                   }))
                 },
                 child: const Text('エンカウント'),
@@ -64,19 +43,7 @@ class _MyHomePageState extends State<MyHomePage> {
             )
           ],
         ),
-      ), // This trailing comma makes auto-formatting nicer for build methods.
+      ),
     );
   }
-}
-
-class HexColor extends Color {
-  static int _getColorFromHex(String hexColor) {
-    hexColor = hexColor.toUpperCase().replaceAll('#', '');
-    if (hexColor.length == 6) {
-      hexColor = 'FF' + hexColor;
-    }
-    return int.parse(hexColor, radix: 16);
-  }
-
-  HexColor(final String hexColor) : super(_getColorFromHex(hexColor));
 }

@@ -1,42 +1,21 @@
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(Encounter());
-}
-
-class Encounter extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: MyHomePage(title: 'モンスターがあらわれた！'),
-    );
-  }
-}
-
-class MyHomePage extends StatefulWidget {
-  MyHomePage({Key? key, required this.title}) : super(key: key);
+class EncounterPage extends StatefulWidget {
+  EncounterPage({Key? key, required this.title}) : super(key: key);
 
   final String title;
 
   @override
-  _MyHomePageState createState() => _MyHomePageState();
+  _EncounterPageState createState() => _EncounterPageState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
+class _EncounterPageState extends State<EncounterPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Text(widget.title),
       ),
-      // body: Column(children: []),
-      // body: Center(
-      //   child: Image.asset('images/image1.png'),
-      // ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -58,19 +37,6 @@ class _MyHomePageState extends State<MyHomePage> {
           ],
         ),
       ),
-
-      // body: Center(
-      //   child: Container(
-      //     alignment: Alignment.bottomCenter,
-      //     width: double.infinity,
-      //     height: double.infinity,
-      //     color: Colors.yellow,
-      //     child: ElevatedButton(
-      //       child: Text("攻撃する！"),
-      //       onPressed: () {},
-      //     ),
-      //   ),
-      // ),
     );
   }
 }
